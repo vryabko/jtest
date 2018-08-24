@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'io.cucumber:cucumber-java:2.3.1'
+    testCompile 'io.cucumber:cucumber-junit:2.3.1'
+
+    testCompile 'io.cucumber:gherkin:5.0.0'
+//    testCompile 'junit:junit:4.12'
+    //compile 'io.cucumber:cucumber-jvm:2.3.1'
+    //compile 'io.cucumber:cucumber-core:2.3.1'
+
+    //compile 'com.github.wasiqb.coteafs:appium:2.1.0'
+    compile 'org.seleniumhq.selenium:selenium-java:3.13.0'
+    compile 'org.seleniumhq.selenium:selenium-server:3.13.0'
+    compile 'org.seleniumhq.selenium:selenium-remote-driver:3.13.0'
+    compile 'org.seleniumhq.selenium:selenium-android-driver:2.39.0'
+
+    testCompile 'io.appium:java-client:6.1.0'
+    //exclude group: 'com.google.guava', module: 'guava'
+    testCompile 'com.google.guava:guava:26.0-jre'
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.3.0-M1'
+}
